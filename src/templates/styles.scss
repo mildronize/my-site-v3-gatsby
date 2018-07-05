@@ -1,0 +1,90 @@
+@import "poole";
+@import url('https://fonts.googleapis.com/css?family=Kanit:300');
+// For syntax highlight
+@import url("prism.css");
+// For TOC
+// @import url('https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.css');
+@import url("tocbot.css");
+// @import url("fonts/supermarket.css");
+
+@font-face {
+    font-family: 'supermarket';
+    src: url('/assets/fonts/supermarket.woff2') format('woff2'),
+         url('/assets/fonts/supermarket.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.tag-label {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+    border-style: none;
+}
+
+h1,h2,h3{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    // font-family: 'supermarket', Helvetica, Arial, sans-serif;
+}
+
+h2,h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 26px;
+    height: 20px;
+    left: 2.25rem;
+    top: 2.25rem;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #ffffff;
+    padding: 2.5em 1.5em 0;
+    font-size: 0.95em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    // background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 1);
+  }

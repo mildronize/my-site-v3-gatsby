@@ -1,0 +1,49 @@
+// Layout
+//
+// Styles for managing the structural hierarchy of the site.
+
+.container {
+  max-width: 38rem;
+  padding-left:  1.5rem;
+  padding-right: 1.5rem;
+}
+
+
+
+
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (min-width: 1300px) {
+
+  .container {
+    margin-left:  auto;
+    margin-right: auto;
+  }
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 1300px) {
+
+  .container {
+    margin-left:  300px;
+    margin-right: auto;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 900px) {
+  .container {
+    margin-left:  0;
+    margin-right: 0;
+  }
+  .masthead{
+    margin-left:  3.75rem;
+    margin-top:  0.9375rem;
+  }
+}
+
+footer {
+  margin-bottom: 2rem;
+}
