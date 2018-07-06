@@ -14,6 +14,12 @@ import { slide as Menu } from 'react-burger-menu'
 
 
 export default class PostTemplate extends React.Component {
+ 
+  constructor(props) {
+    super(props);
+    this.state = {isOpen: true, updateDimensions:null};
+  }
+
   componentDidMount() {
     tocbot.init({
       // Where to render the table of contents.
@@ -23,24 +29,30 @@ export default class PostTemplate extends React.Component {
       // Which headings to grab inside of the contentSelector element.
       headingSelector: 'h1, h2, h3',
     });
-    window.addEventListener("resize", this.updateDimensions.bind(this));
-  }
-  constructor(props) {
-    super(props);
-    this.state = {isOpen: true};
+
+    let updateDimensions = function(){
+      if(typeof window !== 'undefined')
+        if(window.innerWidth < 900)
+          this.setState({isOpen:false, updateDimensions:updateDimensions});
+        else
+          this.setState({isOpen:true, updateDimensions:updateDimensions});
+      else
+        this.setState({isOpen:false, updateDimensions:updateDimensions});
+    };
+    window.addEventListener("resize", updateDimensions.bind(this));
   }
 
   updateDimensions() {
-    if(window.innerWidth < 900){
-      this.setState({isOpen:false});
-    }else
-      this.setState({isOpen:true});
+    // const windowGlobal = typeof window !== 'undefined' && window;
+    // console.log(this.state.windowGlobal.innerWidth);
+    // if(this.state.window.innerWidth < 900){
+    //   this.setState({isOpen:false});
+    // }else
+    //   this.setState({isOpen:true});
   }
-  componentWillMount() {
-      this.updateDimensions();
-  }
+
   componentWillUnmount() {
-      window.removeEventListener("resize", this.updateDimensions);
+      window.removeEventListener("resize", this.state.updateDimensions);
   }
 
   render() {
