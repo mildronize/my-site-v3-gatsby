@@ -15,6 +15,22 @@
 //     font-style: normal;
 // }
 
+@mixin word-wrap() {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+.word-wrap {
+    @include word-wrap();
+}
+
 .tag-label {
     margin: 0 0.1em;
     padding: 0.3em 1em;
@@ -34,6 +50,9 @@ h2,h3{
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+
+
+// TODO: Refactor this part to new file: side bar
 
 /* Position and sizing of burger button */
 .bm-burger-button {
