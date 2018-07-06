@@ -1,6 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import dateFormat from "dateFormat";
+import dateformat from "dateformat";
 import tocbot from "tocbot";
 import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
@@ -54,7 +54,7 @@ export default class PostTemplate extends React.Component {
       post.category_id = config.postDefaultCategoryID;
     }
 
-    const date_display = dateFormat(post.date, "longDate");
+    const date_display = dateformat(post.date, "longDate");
 
     return (
       <div>
