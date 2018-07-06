@@ -1,60 +1,20 @@
 import React from "react";
 import Helmet from "react-helmet";
 import dateformat from "dateformat";
-import tocbot from "tocbot";
 import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import Header from "../components/Header/Header";
+import Link from "gatsby-link";
 import config from "../../data/SiteConfig";
+import SideBar from "../components/SideBar/SideBar";
 // import "./post.css";
-import { slide as Menu } from 'react-burger-menu'
 
 
 export default class PostTemplate extends React.Component {
  
-  constructor(props) {
-    super(props);
-    this.state = {isOpen: true, updateDimensions:null};
-  }
-
-  componentDidMount() {
-    tocbot.init({
-      // Where to render the table of contents.
-      tocSelector: '.js-toc',
-      // Where to grab the headings to build the table of contents.
-      contentSelector: '.js-toc-content',
-      // Which headings to grab inside of the contentSelector element.
-      headingSelector: 'h1, h2, h3',
-    });
-
-    let updateDimensions = function(){
-      if(typeof window !== 'undefined')
-        if(window.innerWidth < 900)
-          this.setState({isOpen:false, updateDimensions:updateDimensions});
-        else
-          this.setState({isOpen:true, updateDimensions:updateDimensions});
-      else
-        this.setState({isOpen:false, updateDimensions:updateDimensions});
-    };
-    window.addEventListener("resize", updateDimensions.bind(this));
-  }
-
-  updateDimensions() {
-    // const windowGlobal = typeof window !== 'undefined' && window;
-    // console.log(this.state.windowGlobal.innerWidth);
-    // if(this.state.window.innerWidth < 900){
-    //   this.setState({isOpen:false});
-    // }else
-    //   this.setState({isOpen:true});
-  }
-
-  componentWillUnmount() {
-      window.removeEventListener("resize", this.state.updateDimensions);
-  }
-
   render() {
     const { slug } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
@@ -70,11 +30,7 @@ export default class PostTemplate extends React.Component {
 
     return (
       <div>
-  
-      <Menu noOverlay isOpen={ this.state.isOpen }>
-          <nav className="toc js-toc"></nav>
-        </Menu>
-
+        <SideBar/>
         <div className="container content sidebar-enable">
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
