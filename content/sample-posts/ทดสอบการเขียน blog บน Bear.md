@@ -1,5 +1,5 @@
 ---
-title: “ทดสอบการเขียน blog บน Bear”
+title: "ทดสอบการเขียน blog บน Bear"
 date: "6/7/2561"
 slug: test-on-bear
 tags:
