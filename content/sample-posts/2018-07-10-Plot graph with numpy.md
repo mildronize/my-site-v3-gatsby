@@ -1,4 +1,4 @@
- ---
+---
 title: "Plot graph with numpy"
 date: "7/10/2018"
 tags:
@@ -7,7 +7,7 @@ tags:
     - visualization
     - matplotlib
     - Jupyter
- ---
+---
 
 
 ## Outline
