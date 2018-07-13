@@ -5,15 +5,8 @@
 // For TOC
 // @import url('https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.css');
 @import url("tocbot.css");
-// @import url("fonts/supermarket.css");
 
-// @font-face {
-//     font-family: 'supermarket';
-//     src: url('/assets/fonts/supermarket.woff2') format('woff2'),
-//          url('/assets/fonts/supermarket.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@import url("fonts/kanit.css");
 
 @mixin word-wrap() {
     overflow-wrap: break-word;
