@@ -1,5 +1,6 @@
 @import "poole";
-@import url('https://fonts.googleapis.com/css?family=Kanit:300');
+// @import url('https://fonts.googleapis.com/css?family=Kanit:300');
+@import url('https://fonts.googleapis.com/css?family=Trirong:600');
 // For syntax highlight
 @import url("prism.css");
 // For TOC
@@ -34,8 +35,8 @@
 }
 
 h1,h2,h3{
-    font-family: 'Kanit', sans-serif;
-    font-weight: 300;
+    font-family: 'Trirong', sans-serif;
+    font-weight: 600;
     // font-family: 'supermarket', Helvetica, Arial, sans-serif;
 }
 
