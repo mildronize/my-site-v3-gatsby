@@ -1,15 +1,10 @@
 ---
-layout: post
-title: 'Vim+Janus & TMUX'
-description: 'Usage & key reference for vim, janus, tmux'
+title: "Vim+Janus & TMUX"
+date: "2015-07-16"
 tags: [vim, janus, tmux, editor]
-category: notes
-permalink: notes/vim-janus-tmux/
-toc: true
-featured: true
 ---
 
-> Note: ปุ่มบางอย่าง ถูกตั้งค่าใหม่ ตามนี้ <https://github.com/mildronize/dotfiles>
+> Note: ปุ่มบางอย่าง ถูกตั้งค่าใหม่ ตามนี้ <https://github.com/mildronize/dotfiles>
 
 # Vim
 ## Basic usage

@@ -1,9 +1,7 @@
 ---
-layout: post
 title: ใช้งานภาษาไทยบน XeLaTeX ฉบับรีบร้อน
-description: "อยากจะพิมพ์ภาษาไทยบนภาษา latex จะทำอย่างไรมาดูกัน"
+date: "2016-03-05"
 tags: [xelatex, thai, miktek, latex, xetex]
-categories: [th]
 featured_image: logo/latex.png
 ---
 
