@@ -14,7 +14,7 @@ import SideBar from "../components/SideBar/SideBar";
 
 
 export default class PostTemplate extends React.Component {
- 
+
   render() {
     const { slug } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
@@ -27,6 +27,16 @@ export default class PostTemplate extends React.Component {
     }
 
     const date_display = dateformat(post.date, "longDate");
+
+    const publish_img_url= function(image_url){
+      return "https://"+config.cloudimg_io_token+".cloudimg.io/cdn/n/x/"+image_url;
+    }
+
+    var matches = [];
+    var regex = /<img[^>]+src="([^">]+)"/ig;
+    while (matches = regex.exec(postNode.html)) {
+      postNode.html = postNode.html.replace(matches[1], publish_img_url(matches[1]));
+    }
 
     return (
       <div>
@@ -53,8 +63,6 @@ export default class PostTemplate extends React.Component {
 
           </main>
         </div>
-
-        
       </div>
     );
   }
