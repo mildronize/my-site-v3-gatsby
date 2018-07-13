@@ -1,10 +1,10 @@
 import React from "react";
 import Helmet from "react-helmet";
 import dateformat from "dateformat";
-import UserInfo from "../components/UserInfo/UserInfo";
-import Disqus from "../components/Disqus/Disqus";
+// import UserInfo from "../components/UserInfo/UserInfo";
+// import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
-import SocialLinks from "../components/SocialLinks/SocialLinks";
+// import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import Header from "../components/Header/Header";
 import Link from "gatsby-link";
@@ -45,10 +45,10 @@ export default class PostTemplate extends React.Component {
                 <div className="js-toc-content word-wrap" dangerouslySetInnerHTML={{ __html: postNode.html }} />
                 <div className="post-meta">
                 <PostTags tags={post.tags} />
-                <SocialLinks postPath={slug} postNode={postNode} />
+                {/* <SocialLinks postPath={slug} postNode={postNode} /> */}
               </div>
-              <UserInfo config={config} />
-              <Disqus postNode={postNode} />
+              {/* <UserInfo config={config} />
+              <Disqus postNode={postNode} /> */}
             </article>
 
           </main>
