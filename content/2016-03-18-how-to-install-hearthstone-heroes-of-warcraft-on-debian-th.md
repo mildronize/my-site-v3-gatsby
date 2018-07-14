@@ -1,10 +1,7 @@
 ---
-layout: post
 title: "วิธีติดตั้งเกม Hearthstone: Heroes of Warcraft บน Debian"
-description: "อธิบายขั้นตอนการลงเกม Hearthstone: Heroes of Warcraft ผ่านโปรแกรม wine พร้อมวิธีแก้ปัญหา"
+date: "2016-03-18"
 tags: [hearthstone, game, debian, how-to, wine]
-categories: [th]
-featured_image: logo/hearthstone.jpg
 ---
 
 ผมได้โอกาสลองเล่น Hearthstone: Heroes of Warcraft ดู ปรากฏว่าสนุกมากๆ เลยครับ ทำออกมาดีเลยที่เดียว แถมมีทุก platform เลย ยกเว้น Linux แอบน้อยใจนิดๆ เลยได้ลองหาวิธีติดตั้งดู ซึ่งก็ไม่ได้ยากอย่างที่คิด ถ้าใครเป็นมือใหม่ลองทำตามขั้นตอนนี้เลยนะครับ

@@ -1,11 +1,7 @@
 ---
-layout: post
 title: Interesting Bloggers
-description: A collection of interesting bloggers
+date: "2015-05-19"
 tags: [blogger]
-category: notes
-permalink: notes/interesting-bloggers/
-featured: true
 ---
 
 ## English writing
