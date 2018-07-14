@@ -1,5 +1,10 @@
 # Next version of my blog
 
+# Branch naming guideline
+
+For post: `post-{post name}`
+For code: `code-{code action name}`
+
 ## Getting Started
 
 Install this starter (assuming [Gatsby](https://github.com/gatsbyjs/gatsby/) is installed and updated) by running from your CLI:
