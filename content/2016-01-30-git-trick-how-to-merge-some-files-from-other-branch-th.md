@@ -1,10 +1,7 @@
 ---
-layout: post
 title: "ทริคการใช้ git: การ merge บางไฟล์ไปอีก branch"
-description: ทริคการใช้งาน git แบบง่ายสำหรับการ merge ไฟล์ไปอีก branch
-categories: [th]
+date: "2016-01-30"
 tags: [git, tip, how-to, branch, merge]
-language: th
 ---
 
 มีหลายๆ เทคนิคที่สามารถทำได้ วิธีนี้เป็นวิธีที่ง่ายที่สุด ซึ่งผมได้นำมาจากบทความของ [jasonrudolph.com](http://jasonrudolph.com/blog/2009/02/25/git-tip-how-to-merge-specific-files-from-another-branch/)

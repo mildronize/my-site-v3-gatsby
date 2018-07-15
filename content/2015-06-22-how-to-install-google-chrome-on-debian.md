@@ -1,9 +1,7 @@
 ---
-layout: post
 title: How to Install Google Chrome on Debian
-description: Installation instuction by using Google repository, and troubleshooting a error of public key is not available.
+date: "2015-06-22"
 tags: [debian, chrome, repository, how-to, install, apt-key, chromium]
-categories: [en]
 ---
 
 # *Deprecated post!

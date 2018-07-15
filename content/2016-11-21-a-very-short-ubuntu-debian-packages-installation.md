@@ -1,10 +1,7 @@
 ---
-layout: post
 title: "A very short Ubuntu/Debian packages installation sheet"
-categories: [en]
 tags: [ubuntu, debian, ppa, chrome, docker, vscode, zotero]
-featured: true
-toc: true
+date: "2016-11-21"
 ---
 
 ## Docker
