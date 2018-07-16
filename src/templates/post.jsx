@@ -45,7 +45,7 @@ export default class PostTemplate extends React.Component {
           <div className="container">
 
             <div className="columns">
-              <div className="column is-8-desktop is-offset-2-desktop">
+              <div className="column is-8-desktop is-9-tablet">
                 <div className="content is-size-5 is-size-6-touch">
 
                   <Helmet>
