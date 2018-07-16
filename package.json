@@ -35,7 +35,9 @@
     "react-helmet": "^5.2.0",
     "react-share": "^2.0.0",
     "react-twitter-widgets": "^1.7.1",
-    "tocbot": "^4.3.2"
+    "tocbot": "^4.3.2",
+    "bulma": "^0.7.1",
+    "autoprefixer": "^8.2.0"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",

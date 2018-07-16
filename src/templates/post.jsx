@@ -7,6 +7,7 @@ import PostTags from "../components/PostTags/PostTags";
 // import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 import Link from "gatsby-link";
 import config from "../../data/SiteConfig";
 import SideBar from "../components/SideBar/SideBar";
@@ -40,29 +41,35 @@ export default class PostTemplate extends React.Component {
 
     return (
       <div>
-        <SideBar/>
-        <div className="container content sidebar-enable">
-          <Helmet>
-            <title>{`${post.title} | ${config.siteTitle}`}</title>
-          </Helmet>
-          <Header />
-          <SEO postPath={slug} postNode={postNode} postSEO />
-          
-          <main>
-            <article className="post">
-                <h1 className="post-title">{post.title}</h1>
-                <time className="post-date">{date_display}</time>
-                <div className="js-toc-content word-wrap" dangerouslySetInnerHTML={{ __html: postNode.html }} />
-                <div className="post-meta">
-                <PostTags tags={post.tags} />
-                {/* <SocialLinks postPath={slug} postNode={postNode} /> */}
-              </div>
-              {/* <UserInfo config={config} />
-              <Disqus postNode={postNode} /> */}
-            </article>
+          <section className="section">
+          <div className="container">
 
-          </main>
+            <div className="columns">
+              <div className="column is-8-desktop is-offset-2-desktop">
+                <div className="content">
+
+                  <Helmet>
+                    <title>{`${post.title} | ${config.siteTitle}`}</title>
+                  </Helmet>
+                  <Header />
+                  <SEO postPath={slug} postNode={postNode} postSEO />
+                  
+                  
+                        <h1 className="post-title">{post.title}</h1>
+                        <time className="post-date">{date_display}</time>
+                        <div className="js-toc-content word-wrap" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+                        <div className="post-meta">
+                        <PostTags tags={post.tags} />
+                        {/* <SocialLinks postPath={slug} postNode={postNode} /> */}
+                      </div>
+                      {/* <UserInfo config={config} />
+                      <Disqus postNode={postNode} /> */}
+              </div>
+            </div>
+          </div>
         </div>
+        </section>
+        <Footer />
       </div>
     );
   }

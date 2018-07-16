@@ -23,9 +23,21 @@ class PostListing extends React.Component {
       <div>
         {/* Your post list here. */
         postList.map(post => (
-          <Link to={post.path} key={post.title}>
-            <h2 className="post-title">{post.title}</h2>
-          </Link>
+          <div class="box">
+            <article class="media">
+              <div class="media-left">
+                <div class="image is-128x128">
+                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image"/>
+                </div>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                    <div class="title is-4"><Link to={post.path} key={post.title}>{post.title}</Link></div>
+                    <div class="subtitle is-6">{post.date}</div>
+                </div>
+              </div>
+            </article>
+          </div>
         ))}
       </div>
     );
