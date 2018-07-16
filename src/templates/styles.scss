@@ -1,4 +1,5 @@
-@import "poole";
+// @import "poole";
+@import "~bulma/bulma";
 
 // For syntax highlight
 @import url("prism.css");
@@ -25,25 +26,31 @@
     @include word-wrap();
 }
 
-.tag-label {
-    margin: 0 0.1em;
-    padding: 0.3em 1em;
-    color: #fff;
-    background: #999;
-    font-size: 80%;
-    border-style: none;
-}
 
-h1,h2,h3{
+h1,h2,h3, .title{
     font-family: 'Trirong', sans-serif;
     font-weight: 600;
     // font-family: 'supermarket', Helvetica, Arial, sans-serif;
 }
 
-h2,h3{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+.box{
+  box-shadow: none;
+  padding: .5rem;
 }
+
+.title a {
+  color: $grey-dark;
+}
+
+.title a:hover {
+  color: $blue;
+}
+
+
+// h2,h3{
+//     margin-top: 2rem;
+//     margin-bottom: 1rem;
+// }
 
 
 // TODO: Refactor this part to new file: side bar

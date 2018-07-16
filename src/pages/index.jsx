@@ -3,21 +3,37 @@ import Helmet from "react-helmet";
 import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
 
 class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <div className="container content">
-        <Header />
-        <Helmet title={config.siteTitle} />
-        <SEO postEdges={postEdges} />
-        <PostListing postEdges={postEdges} />
+      <div>
+      <section className="section">
+        <div className="container">
+
+          <div className="columns">
+            <div className="column is-8-desktop is-offset-2-desktop">
+              <div className="content">
+                <Header />
+                <Helmet title={config.siteTitle} />
+                <SEO postEdges={postEdges} />
+                <PostListing postEdges={postEdges} />
+              </div>
+             </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
       </div>
+      
     );
   }
 }
+
+
 
 export default Index;
 
