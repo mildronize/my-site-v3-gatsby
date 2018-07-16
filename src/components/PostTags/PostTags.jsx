@@ -10,7 +10,7 @@ class PostTags extends Component {
         {tags &&
           tags.map(tag => (
             
-              <span className="tag">
+              <span className="tag is-light">
               <Link
                 key={tag}
                 to={`/tags/${_.kebabCase(tag)}`}>

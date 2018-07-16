@@ -10,7 +10,7 @@ class Header extends Component {
       <header className="masthead">
         <h2 className="masthead-title">
           <Link to="/" >{config.siteTitle}</Link>
-          <small>tagline</small>
+          <small></small>
         </h2>
       </header>
     );

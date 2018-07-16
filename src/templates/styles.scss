@@ -35,7 +35,11 @@ h1,h2,h3, .title{
 
 .box{
   box-shadow: none;
-  padding: .5rem;
+  padding: .9rem;
+}
+
+.subtitle{
+  color: $grey-light;
 }
 
 .title a {
@@ -45,6 +49,11 @@ h1,h2,h3, .title{
 .title a:hover {
   color: $blue;
 }
+
+.tag a{
+  color: $grey-dark;
+}
+
 
 
 // h2,h3{
