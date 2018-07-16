@@ -46,7 +46,7 @@ export default class PostTemplate extends React.Component {
 
             <div className="columns">
               <div className="column is-8-desktop is-offset-2-desktop">
-                <div className="content is-size-5">
+                <div className="content is-size-5 is-size-6-touch">
 
                   <Helmet>
                     <title>{`${post.title} | ${config.siteTitle}`}</title>
