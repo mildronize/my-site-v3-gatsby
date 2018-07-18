@@ -6,13 +6,19 @@ import config from "../../../data/SiteConfig";
 class Header extends Component {
   render() {
     return (
-
-      <header className="masthead">
-        <h2 className="masthead-title">
-          <Link to="/" >{config.siteTitle}</Link>
-          <small></small>
-        </h2>
-      </header>
+        <div className="container">
+          <div className="columns">
+            <div className="column is-8-desktop is-offset-2-desktop is-8-tablet is-offset-2-tablet">
+              <div className="content">
+                <div class="title is-size-3">
+                  <Link to="/" >{config.siteTitle}</Link>
+                  <small></small>
+                  <hr/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     );
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import dateformat from "dateformat";
+import getImageCdnUrl from "../../utility";
 
 class PostListing extends React.Component {
   getPostList() {
@@ -33,7 +34,7 @@ class PostListing extends React.Component {
             <div class="box">
                 <div class="content">
                 <div class="columns">
-                  {post.cover && <div class="column is-4"><Link to={post.path} key={post.title}><img src={post.cover} /></Link></div>}
+                  {post.cover && <div class="column is-4"><Link to={post.path} key={post.title}><img src={getImageCdnUrl(post.cover)} /></Link></div>}
                   <div class="column">
                     <div class="title is-4"><Link to={post.path} key={post.title}>{post.title}</Link></div>
                     <div class="subtitle is-6">{post.date} | Read in {post.timeToRead} min</div>
