@@ -26,8 +26,6 @@ class PostListing extends React.Component {
 
     return (
       <div>
-        <div class="title is-4">Recent Posts</div>
-        
           {/* Your post list here. */
           postList.map( post => (
             <div>

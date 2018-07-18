@@ -20,6 +20,7 @@ class Index extends React.Component {
             <div className="columns">
               <div className="column is-8-desktop is-offset-2-desktop is-8-tablet is-offset-2-tablet">
                 <div className="content">
+                  <div class="title is-4">Recent Posts</div>
                   <PostListing postEdges={postEdges} />
                 </div>
               </div>
