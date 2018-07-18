@@ -11,7 +11,7 @@ import Footer from "../components/Footer/Footer";
 import Link from "gatsby-link";
 import config from "../../data/SiteConfig";
 import SideBar from "../components/SideBar/SideBar";
-import getImageCdnUrl from "../utility";
+import {htmlImagesToCdn, getImageCdnUrl} from "../utility";
 // import "./post.css";
 
 
@@ -29,12 +29,7 @@ export default class PostTemplate extends React.Component {
     }
 
     const date_display = dateformat(post.date, "longDate");
-
-    var matches = [];
-    var regex = /<img[^>]+src="([^">]+)"/ig;
-    while (matches = regex.exec(postNode.html)) {
-      postNode.html = postNode.html.replace(matches[1], getImageCdnUrl(matches[1]));
-    }
+    postNode.html = htmlImagesToCdn(postNode.html)
 
     return (
       <div>
@@ -42,7 +37,6 @@ export default class PostTemplate extends React.Component {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
-        
         <section className="section">
           <Header />
           <div className="container">
@@ -50,7 +44,9 @@ export default class PostTemplate extends React.Component {
               <div className="column is-8-desktop is-offset-2-desktop is-8-tablet is-offset-2-tablet">
 
                 <div className="content is-size-5 is-size-6-touch">
-
+                <div class="has-text-centered cover">
+                  {post.cover && <Link to={post.path} key={post.title}><img className="post-cover" src={getImageCdnUrl(post.cover)} /></Link>}
+                  </div>
                   <h1>{post.title}</h1>
                   <div className="subtitle is-6">{date_display}</div>
                   <div><PostTags tags={post.tags} /></div>
@@ -60,7 +56,7 @@ export default class PostTemplate extends React.Component {
                     {/* <SocialLinks postPath={slug} postNode={postNode} /> */}
                   </div>
                   {/* <UserInfo config={config} /> */}
-                  <hr/>
+                  <hr />
                   <Disqus postNode={postNode} />
                 </div>
               </div>

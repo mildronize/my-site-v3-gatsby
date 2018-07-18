@@ -1,20 +1,32 @@
 import config from "../data/SiteConfig";
 
-(function(global) {
-    'use strict';
+var image_src_regex = /<img[^>]+src="([^">]+)"/ig;
 
-    var getImageCdnUrl= function(image_url){
-        return "https://"+config.cloudimg_io_token+".cloudimg.io/cdn/n/x/"+image_url;
+export function getImageCdnUrl(imageUrl){
+    return "https://"+config.cloudimg_io_token+".cloudimg.io/cdn/n/x/"+imageUrl;
+}
+
+export function getImageCdnThumbnailUrl(imageUrl){
+    // Read more api: https://docs.cloudimage.io/go/cloudimage-documentation/en/operations/
+    return "https://"+config.cloudimg_io_token+".cloudimg.io/width/300/q80/"+imageUrl;
+}
+
+export function htmlImagesToCdn(htmlContent){
+    var matches = [];
+    while (matches = image_src_regex.exec(htmlContent)) {
+        htmlContent = htmlContent.replace(matches[1], getImageCdnUrl(matches[1]));
     }
+    return htmlContent;
+}
 
-    module.exports = getImageCdnUrl;
-    // if (typeof define === 'function' && define.amd) {
-    //     define(function () {
-    //       return getImageCdnUrl;
-    //     });
-    // } else if (typeof exports === 'object') {
-    //     module.exports = getImageCdnUrl;
-    // } else {
-    //     global.getImageCdnUrl = getImageCdnUrl;
-    // }
-})(this);
+export function getImageUrlFromHtml(htmlContent){
+    var matches = [];
+    var match;
+    while (match = image_src_regex.exec(htmlContent)) {
+        matches.push(match[1]);
+        console.log(match[1]);
+    }
+    if(matches.length > 0)
+        return matches[0];
+}
+    

@@ -59,3 +59,15 @@ h1,h2,h3, .title{
   font-style: italic;
   color: $grey;
 }
+
+img[class=post-cover]{
+  max-height: 300px; 
+  width: 100%;
+  object-fit: cover ;
+}
+
+img[class=post-list]{
+  max-height: 200px; 
+  max-width: 100%;
+
+}
