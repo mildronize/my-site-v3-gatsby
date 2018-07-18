@@ -59,7 +59,6 @@ export default class PostTemplate extends React.Component {
                         <div className="subtitle is-6">{date_display}</div>
                         <div><PostTags tags={post.tags} /></div>
                         <hr/>
-                        {postNode.excerpt}
                         <div className="js-toc-content word-wrap" dangerouslySetInnerHTML={{ __html: postNode.html }} />
                         <div className="post-meta">
                         

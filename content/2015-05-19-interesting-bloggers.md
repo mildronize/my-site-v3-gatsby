@@ -2,6 +2,7 @@
 title: Interesting Bloggers
 date: "2015-05-19"
 tags: [blogger]
+category: "note"
 ---
 
 ## English writing
