@@ -51,7 +51,7 @@ export default class PostTemplate extends React.Component {
 
                 <div className="content is-size-5 is-size-6-touch">
 
-                  <div className="title is-size-4-mobile">{post.title}</div>
+                  <div className="title">{post.title}</div>
                   <div className="subtitle is-6">{date_display}</div>
                   <div><PostTags tags={post.tags} /></div>
                   <hr />
