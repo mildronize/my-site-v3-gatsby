@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import dateformat from "dateformat";
 // import UserInfo from "../components/UserInfo/UserInfo";
-// import Disqus from "../components/Disqus/Disqus";
+import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
 // import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
@@ -54,18 +54,19 @@ export default class PostTemplate extends React.Component {
                   <Header />
                   <SEO postPath={slug} postNode={postNode} postSEO />
                   
-                  
+
                         <div className="title">{post.title}</div>
                         <div className="subtitle is-6">{date_display}</div>
                         <div><PostTags tags={post.tags} /></div>
                         <hr/>
+                        {postNode.excerpt}
                         <div className="js-toc-content word-wrap" dangerouslySetInnerHTML={{ __html: postNode.html }} />
                         <div className="post-meta">
                         
                         {/* <SocialLinks postPath={slug} postNode={postNode} /> */}
                       </div>
-                      {/* <UserInfo config={config} />
-                      <Disqus postNode={postNode} /> */}
+                      {/* <UserInfo config={config} /> */}
+                      <Disqus postNode={postNode} />
               </div>
             </div>
           </div>
