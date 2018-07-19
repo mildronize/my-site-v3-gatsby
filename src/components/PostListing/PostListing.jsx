@@ -33,9 +33,9 @@ class PostListing extends React.Component {
             <div class="box">
                 <div class="content">
                 <div class="columns">
-                  {post.cover && <div class="column is-4"><Link to={post.path} key={post.title}><img className="post-list" src={getImageCdnThumbnailUrl(post.cover)} /></Link></div>}
+                  {post.cover && <div class="column is-3"><Link to={post.path} key={post.title}><img className="post-list" src={getImageCdnThumbnailUrl(post.cover)} /></Link></div>}
                   <div class="column">
-                    <div class="title is-4"><Link to={post.path} key={post.title}>{post.title}</Link></div>
+                    <div class="title is-size-4 is-size-5-mobile"><Link to={post.path} key={post.title}>{post.title}</Link></div>
                     <div class="subtitle is-6">{post.date} | Read in {post.timeToRead} min</div>
                   </div>
                 </div>
@@ -45,7 +45,7 @@ class PostListing extends React.Component {
             </div>
             ))
           }
-          
+
       </div>
     );
   }
