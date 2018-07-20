@@ -9,12 +9,12 @@ tags:
     - dropbox
     - workflow
 ---
- 
+
 
 เนื่องจากผมเองเขียน Blog กับ Static page generator ซึ่งใช้ภาษา Markdownในการเขียนเนื้อหา ซึ่งใช้ Jekyll ในในการแปลงเป็นหน้าเว็บให้ และผมตัดสินใจย้ายบล็อกจากการใช้ jekyll มาใช้ GatsbyJS แทน เลยถือโอกาส หาเครื่องมือหาเหมาะๆ ที่ไม่ต้องอยู่หน้าคอม แล้วมานั่งเขียนบล็อก อยากแบบเขียนช่วงว่างๆ ตาม มุมพักผ่อนต่างๆ ที่ไม่ต้องพกโน๊ตบุ๊คไปด้วยคับ ( ไว้มีโอกาสจะเขียน เรื่อง Static page generator อีกบล็อกครับ)
 
 เลยลองหาแอพที่เอาไว้ใช้เขียน blog ดูว่าตัวไหนดีและฟรีบ้าง ก็มาเจอ Bear นี่แหละครับ จริงๆ bear เป็น แอพไว้จดโน๊ตอารมณ์เดียวกับ Evernote นั่นแหละครับ 
-![https://www.dropbox.com/s/g5daz7war78hs21/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-0.jpg?dl=0](https://www.dropbox.com/s/g5daz7war78hs21/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-0.jpg?raw=1)
+![https://www.dropbox.com/s/ctdl5fr7c7cplbb/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-0.jpg?dl=0](https://www.dropbox.com/s/ctdl5fr7c7cplbb/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-0.jpg?raw=1)
 
 
 ### ข้อดีของ Bear ที่ทำให้ผมชอบมากๆ คือ
@@ -42,7 +42,7 @@ tags:
 3. `blog/template` สำหรับ template markdown ที่จะใช้ในการเขียน blog บน GatsbyJS ครับ
 
 ส่วน template ที่ใช้ในการเขียนบล็อก
-![https://www.dropbox.com/s/bap6qpg4eui0vok/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-1.jpg?dl=0](https://www.dropbox.com/s/bap6qpg4eui0vok/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-1.jpg?raw=1)
+![https://www.dropbox.com/s/7dvcxre78kq2toi/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-1.jpeg?dl=0](https://www.dropbox.com/s/7dvcxre78kq2toi/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-1.jpeg?raw=1)
 และเมื่อ export เป็น Text Bundle ที่เป็นภาษา Markdown ดังนี้ครับ
 ```markdown
 # Template ชื่อบล็อก
@@ -60,7 +60,7 @@ tags:
 
 ## ต่อไปประมวลผลไฟล์ และอัพโหลดรูปขึ้น dropbox ด้วยแอพ Workflow
 
-![https://www.dropbox.com/s/helyddlkdjutv5o/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-2.jpg?dl=0](https://www.dropbox.com/s/helyddlkdjutv5o/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-2.jpg?raw=1)
+![https://www.dropbox.com/s/7dranoizgn7ph78/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-2.jpg?dl=0](https://www.dropbox.com/s/7dranoizgn7ph78/2018-07-20-%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%20Markdown%20%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%AD%E0%B8%9E%E0%B8%88%E0%B8%94%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%20Bear%20%E0%B8%9A%E0%B8%99%20iOS-2.jpg?raw=1)
 
 ตั้งแต่รู้จักกับแอพ workflow นี้รู้สึกชีวิตจะสะดวกสบายหลายอย่าง มันช่วยมันง่ายที่เราต้องทำซ้ำๆ บ่อยให้เรา ก็เหมือนกับการเขียนโปรแกรมนั่นแหละคับ แต่มันจะเป็นการลากบล็อก ( อารมณ์เหมือน module ที่มี input และ output ) มาเรียงต่อกันเป็นชุดคำสั่งครับ
 ทำให้เราสามารถทำ automation ง่ายๆ ได้ครับ
@@ -69,7 +69,7 @@ tags:
 
 1. ขอสิทธิ์การเขียนไฟล์ลงบน Dropbox ในทีนี้ผมตั้งค่าให้เก็บไฟล์รูปที่ `/Public/blog`
 2. ใส่ชื่อของโน๊ตลงไปใน `[TITLE_POST]`
-3. ใส่วันที่ปัจจุบันลงไปใน `[DATE`
+3. ใส่วันที่ปัจจุบันลงไปใน `7/20/2018`
 4. อัพโหลดรูปขึ้น dropbox ทุกรูป แล้วแก้ url ให้เป็น direct link
 5. จากนั้นแก้รูปแบบให้ตรงกับ yaml frontmatter เป็นอันเสร็จ
 
