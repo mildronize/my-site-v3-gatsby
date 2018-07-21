@@ -1,6 +1,6 @@
 module.exports = {
   blogPostDir: "/", // The name of directory that contains your posts.
-  siteTitle: "Mildronize's Blog", // Site title.
+  siteTitle: "mildronize", // Site title.
   siteTitleAlt: "Mildronize's Blog", // Alternative site title for SEO.
   siteLogo: "/logos/logo-100.png", // Logo used for SEO and manifest.
   siteUrl: "https://dev.mildronize.com", // Domain of your website without pathPrefix.
@@ -9,7 +9,7 @@ module.exports = {
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
   googleAnalyticsID: "", // GA tracking ID.
-  disqusShortname: "mildronize", // Disqus shortname.
+  disqusShortname: "dev-mildronize", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   userName: "Advanced User", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
@@ -36,7 +36,7 @@ module.exports = {
     }
   ],
   copyright: "Copyright © 2017. Mildronize", // Copyright string for the footer of the website and RSS feed.
-  themeColor: "#c62828", // Used for setting manifest and progress theme colors.
-  backgroundColor: "#e0e0e0", // Used for setting manifest background color.
+  themeColor: "#1565C0", // Used for setting manifest and progress theme colors.
+  backgroundColor: "#ffffff", // Used for setting manifest background color.
   cloudimg_io_token: "ce8be7dec"
 };
