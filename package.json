@@ -4,7 +4,9 @@
   "version": "1.1.0",
   "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
   "dependencies": {
+    "autoprefixer": "^8.2.0",
     "babel-plugin-lodash": "^3.3.2",
+    "bulma": "^0.7.1",
     "dateformat": "^3.0.3",
     "gatsby": "^1.9.273",
     "gatsby-link": "^1.6.36",
@@ -36,8 +38,7 @@
     "react-share": "^2.0.0",
     "react-twitter-widgets": "^1.7.1",
     "tocbot": "^4.3.2",
-    "bulma": "^0.7.1",
-    "autoprefixer": "^8.2.0"
+    "urljoin": "^0.1.5"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",
