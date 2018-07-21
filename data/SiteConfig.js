@@ -1,14 +1,16 @@
+
+
 module.exports = {
   blogPostDir: "/", // The name of directory that contains your posts.
   siteTitle: "mildronize", // Site title.
   siteTitleAlt: "Mildronize's Blog", // Alternative site title for SEO.
   siteLogo: "/logos/logo-100.png", // Logo used for SEO and manifest.
   siteUrl: "https://dev.mildronize.com", // Domain of your website without pathPrefix.
-  pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+  pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
-  googleAnalyticsID: "", // GA tracking ID.
+  googleAnalyticsID: "UA-62565035-2", // GA tracking ID.
   disqusShortname: "dev-mildronize", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   userName: "Advanced User", // Username to display in the author segment.
@@ -22,20 +24,30 @@ module.exports = {
     {
       label: "GitHub",
       url: "https://github.com/mildronize",
-      iconClassName: "fa fa-github"
+      iconClassName: ['fab', 'github']
     },
     {
       label: "Twitter",
       url: "https://twitter.com/mildronize",
-      iconClassName: "fa fa-twitter"
+      iconClassName: ['fab', 'twitter']
+    },
+    {
+      label: "linkedin",
+      url: "https://www.linkedin.com/in/thada-wangthammang-281894a6",
+      iconClassName: ['fab', 'linkedin']
     },
     {
       label: "Email",
       url: "mailto:mildronize@gmail.com",
-      iconClassName: "fa fa-envelope"
+      iconClassName: "envelope"
+    },
+    {
+      label: "RSS",
+      url: "https://dev.mildronize.com/rss.xml",
+      iconClassName: "rss"
     }
   ],
-  copyright: "Copyright © 2017. Mildronize", // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2018 by Thada Wangthammang", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#1565C0", // Used for setting manifest and progress theme colors.
   backgroundColor: "#ffffff", // Used for setting manifest background color.
   cloudimg_io_token: "ce8be7dec"
