@@ -17,6 +17,7 @@ class About extends Component {
         </ul>
 
         <hr/>
+        <div><a href="https://github.com/mildronize/website">Website Source</a></div>
         This site based on{" "}
         <a href="https://github.com/Vagr9K/gatsby-advanced-starter">
           Gatsby Advanced Starter
