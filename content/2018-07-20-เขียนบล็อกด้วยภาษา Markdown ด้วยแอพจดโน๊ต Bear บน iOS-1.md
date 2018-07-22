@@ -52,9 +52,9 @@ date: "7/20/2018"
 tags:
 	* Bear
 ---
- 
+#blog/draft
 
-**Remove this tag** 
+**Remove this tag** #blog/template
 ```
 
 
@@ -68,8 +68,8 @@ tags:
 ### ใน Workflow: Publish bear note to markdown ทำอะไรบ้าง
 
 1. ขอสิทธิ์การเขียนไฟล์ลงบน Dropbox ในทีนี้ผมตั้งค่าให้เก็บไฟล์รูปที่ `/Public/blog`
-2. ใส่ชื่อของโน๊ตลงไปใน `[TITLE_POST]`
-3. ใส่วันที่ปัจจุบันลงไปใน `7/20/2018`
+2. ใส่ชื่อของโน๊ตลงไปใน `[POST_TITLE]`
+3. ใส่วันที่ปัจจุบันลงไปใน `[TITLE]`
 4. อัพโหลดรูปขึ้น dropbox ทุกรูป แล้วแก้ url ให้เป็น direct link
 5. จากนั้นแก้รูปแบบให้ตรงกับ yaml frontmatter เป็นอันเสร็จ
 
