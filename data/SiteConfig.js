@@ -42,6 +42,11 @@ module.exports = {
       iconClassName: "envelope"
     },
     {
+      label: "Medium",
+      url: "https://medium.com/@mildronize",
+      iconClassName: ['fab', 'medium']
+    },
+    {
       label: "RSS",
       url: "https://dev.mildronize.com/rss.xml",
       iconClassName: "rss"
