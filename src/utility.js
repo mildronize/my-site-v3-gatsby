@@ -24,7 +24,6 @@ export function getImageUrlFromHtml(htmlContent){
     var match;
     while (match = image_src_regex.exec(htmlContent)) {
         matches.push(match[1]);
-        console.log(match[1]);
     }
     if(matches.length > 0)
         return matches[0];

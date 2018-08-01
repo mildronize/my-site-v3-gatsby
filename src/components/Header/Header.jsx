@@ -11,7 +11,7 @@ class Header extends Component {
           <div className="column is-8-desktop is-offset-2-desktop is-8-tablet is-offset-2-tablet">
             <div className="columns">
               <div className="column">
-                <div class="logo is-size-3">
+                <div className="logo is-size-3">
                   <Link to="/" >{config.siteTitle}</Link>
                   <small></small>
 
