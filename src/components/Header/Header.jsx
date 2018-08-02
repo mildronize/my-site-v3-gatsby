@@ -20,6 +20,7 @@ class Header extends Component {
               </div>
               <div className="column has-text-right has-text-centered-mobile is-size-4">
                   <span className="menu-link"><Link to="/" >about</Link></span>
+                  <span className="menu-link"><Link to="/project" >project</Link></span>
                   <span className="menu-link"><Link to="/blog" >blog</Link></span>
               </div>
 
