@@ -4,7 +4,6 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Project from "../components/Project/Project";
 import config from "../../data/SiteConfig";
-import Markdown from 'react-markdown';
 
 class ProjectPage extends Component {
 
