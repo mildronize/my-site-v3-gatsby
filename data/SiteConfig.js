@@ -13,7 +13,7 @@ module.exports = {
   googleAnalyticsID: "UA-62565035-2", // GA tracking ID.
   disqusShortname: "dev-mildronize", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
-  userName: "Advanced User", // Username to display in the author segment.
+  userName: "Thada Wangthammang", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "North Pole, Earth", // User location to display in the author segment.
   userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
