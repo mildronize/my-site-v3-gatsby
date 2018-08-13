@@ -41,9 +41,9 @@ export default class PostTemplate extends React.Component {
           <Header />
           <div className="container">
             <div className="columns">
-              <div className="column is-8-desktop is-offset-2-desktop is-8-tablet is-offset-2-tablet">
+              <div className="column is-6-desktop is-offset-3-desktop is-8-tablet is-offset-2-tablet">
 
-                <div className="content is-size-5 is-size-6-touch">
+                <div className="content is-size-6 is-size-5-fullhd">
                 <div class="has-text-centered cover">
                   {post.cover && <Link to={post.path} key={post.title}><img className="post-cover" src={getImageCdnUrl(post.cover)} /></Link>}
                   </div>
