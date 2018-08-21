@@ -46,7 +46,6 @@ export default class MainLayout extends React.Component {
     return (
       <div>
         <Helmet>
-          <meta http-equiv="refresh" content="0; url=https://mildronize.com/" />
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
